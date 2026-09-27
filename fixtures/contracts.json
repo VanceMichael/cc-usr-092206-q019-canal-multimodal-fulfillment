@@ -1,0 +1,52 @@
+{
+  "contracts": [
+    {
+      "id": "CT-TEA-2610",
+      "customer": "六堡茶出口经理",
+      "consignee": "河内HANOI-TEA分销公司",
+      "commodity": "六堡茶(紧压茶,食品)",
+      "hs_code": "090230",
+      "incoterm": "DAP",
+      "origin": "广西梧州",
+      "destination_node": "HANOI",
+      "appointment_set": "APP_TEA",
+      "quotation_ref": "Q-2026-08",
+      "route_locked": "CANAL",
+      "total_teu": 6,
+      "currency": "CNY",
+      "signed_at": "2026-09-05",
+      "latest_delivery": "2026-10-31T17:00",
+      "partial_allowed": true,
+      "shipments": [
+        {"id": "CT-TEA-2610-S1", "teu": 3, "cargo_ready": "2026-10-08T08:00",
+         "latest_delivery": "2026-10-25T17:00", "note": "秋茶第一批"},
+        {"id": "CT-TEA-2610-S2", "teu": 3, "cargo_ready": "2026-10-12T08:00",
+         "latest_delivery": "2026-10-31T17:00", "note": "秋茶第二批"}
+      ],
+      "doc_pack": ["出口报关单", "商业发票", "装箱单", "外贸合同", "RCEP原产地证书", "植物检疫证书", "海运提单", "进口报关单", "提货单"]
+    },
+    {
+      "id": "CT-AUTO-2610",
+      "customer": "汽车散件出口部",
+      "consignee": "河内HANOI-AUTO组装厂",
+      "commodity": "汽车散件(CKD)",
+      "hs_code": "870899",
+      "incoterm": "DAP",
+      "origin": "广西柳州(梧州港启运)",
+      "destination_node": "HANOI",
+      "appointment_set": "APP_AUTO",
+      "quotation_ref": "Q-AUTO-09",
+      "route_locked": "CANAL",
+      "total_teu": 24,
+      "currency": "CNY",
+      "signed_at": "2026-09-08",
+      "latest_delivery": "2026-10-22T16:00",
+      "partial_allowed": true,
+      "shipments": [
+        {"id": "CT-AUTO-2610-S1", "teu": 24, "cargo_ready": "2026-10-05T08:00",
+         "latest_delivery": "2026-10-22T16:00", "note": "月度生产线补货"}
+      ],
+      "doc_pack": ["出口报关单", "商业发票", "装箱单", "外贸合同", "RCEP原产地证书", "海运提单", "进口报关单", "提货单"]
+    }
+  ]
+}

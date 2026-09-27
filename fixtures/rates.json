@@ -1,0 +1,452 @@
+{
+  "currency": "CNY",
+  "rate_cards": [
+    {
+      "route": "CANAL",
+      "version": "v1",
+      "name": "通航促销价",
+      "effective_from": "2026-04-01",
+      "effective_to": "2026-07-31",
+      "note": "平陆运河通航初期促销：船闸免费、江海直达运费下浮",
+      "components": [
+        {
+          "key": "THC_WUZHOU",
+          "label": "梧州港码头作业费",
+          "step_ref": "T_WUZHOU",
+          "amount": 480
+        },
+        {
+          "key": "CUSTOMS_EXPORT",
+          "label": "出口报关与单证",
+          "step_ref": "C_WUZHOU",
+          "amount": 320
+        },
+        {
+          "key": "FREIGHT_DIRECT",
+          "label": "梧州—钦州江海直达运费(促销)",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 1380
+        },
+        {
+          "key": "LOCK_MADONG",
+          "label": "马道船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 0
+        },
+        {
+          "key": "LOCK_QISHI",
+          "label": "企石船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 0
+        },
+        {
+          "key": "LOCK_QINGSHA",
+          "label": "青年船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 0
+        },
+        {
+          "key": "THC_QINZHOU",
+          "label": "钦州港中转作业费",
+          "step_ref": "T_QINZHOU",
+          "amount": 520
+        },
+        {
+          "key": "CUSTOMS_TRANSIT",
+          "label": "钦州出口转关",
+          "step_ref": "C_QINZHOU",
+          "amount": 120
+        },
+        {
+          "key": "FREIGHT_COASTER",
+          "label": "钦州—防封海运费",
+          "step_ref": "VS_COASTER_QZ",
+          "amount": 980
+        },
+        {
+          "key": "THC_HAIPHONG",
+          "label": "海防港卸船费",
+          "step_ref": "T_HAIPHONG",
+          "amount": 460
+        },
+        {
+          "key": "CUSTOMS_IMPORT",
+          "label": "越南进口清关",
+          "step_ref": "C_HAIPHONG",
+          "amount": 680
+        },
+        {
+          "key": "FREIGHT_TRUCK",
+          "label": "海防—河内卡车",
+          "step_ref": "VS_TRUCK_HP",
+          "amount": 1100
+        },
+        {
+          "key": "FEE_DELIVERY",
+          "label": "河内收货预约交付",
+          "step_ref": "APPOINTMENT",
+          "amount": 180
+        }
+      ]
+    },
+    {
+      "route": "CANAL",
+      "version": "v2",
+      "name": "标准价",
+      "effective_from": "2026-08-01",
+      "effective_to": null,
+      "note": "促销结束后恢复标准费率，船闸按次计收",
+      "components": [
+        {
+          "key": "THC_WUZHOU",
+          "label": "梧州港码头作业费",
+          "step_ref": "T_WUZHOU",
+          "amount": 480
+        },
+        {
+          "key": "CUSTOMS_EXPORT",
+          "label": "出口报关与单证",
+          "step_ref": "C_WUZHOU",
+          "amount": 320
+        },
+        {
+          "key": "FREIGHT_DIRECT",
+          "label": "梧州—钦州江海直达运费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 1580
+        },
+        {
+          "key": "LOCK_MADONG",
+          "label": "马道船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "LOCK_QISHI",
+          "label": "企石船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "LOCK_QINGSHA",
+          "label": "青年船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "THC_QINZHOU",
+          "label": "钦州港中转作业费",
+          "step_ref": "T_QINZHOU",
+          "amount": 520
+        },
+        {
+          "key": "CUSTOMS_TRANSIT",
+          "label": "钦州出口转关",
+          "step_ref": "C_QINZHOU",
+          "amount": 120
+        },
+        {
+          "key": "FREIGHT_COASTER",
+          "label": "钦州—防封海运费",
+          "step_ref": "VS_COASTER_QZ",
+          "amount": 980
+        },
+        {
+          "key": "THC_HAIPHONG",
+          "label": "海防港卸船费",
+          "step_ref": "T_HAIPHONG",
+          "amount": 460
+        },
+        {
+          "key": "CUSTOMS_IMPORT",
+          "label": "越南进口清关",
+          "step_ref": "C_HAIPHONG",
+          "amount": 680
+        },
+        {
+          "key": "FREIGHT_TRUCK",
+          "label": "海防—河内卡车",
+          "step_ref": "VS_TRUCK_HP",
+          "amount": 1100
+        },
+        {
+          "key": "FEE_DELIVERY",
+          "label": "河内收货预约交付",
+          "step_ref": "APPOINTMENT",
+          "amount": 180
+        }
+      ]
+    },
+    {
+      "route": "OLD",
+      "version": "v3",
+      "name": "旧线现行价",
+      "effective_from": "2025-09-01",
+      "effective_to": null,
+      "note": "西江—南沙—防封绕行线，两次中转",
+      "components": [
+        {
+          "key": "THC_WUZHOU",
+          "label": "梧州港码头作业费",
+          "step_ref": "T_WUZHOU",
+          "amount": 480
+        },
+        {
+          "key": "CUSTOMS_EXPORT",
+          "label": "出口报关与单证",
+          "step_ref": "C_WUZHOU",
+          "amount": 320
+        },
+        {
+          "key": "FREIGHT_FEEDER",
+          "label": "梧州—南沙西江驳船",
+          "step_ref": "VS_FEEDER_OLD",
+          "amount": 1480
+        },
+        {
+          "key": "THC_NANSHA",
+          "label": "南沙港中转作业费",
+          "step_ref": "T_NANSHA",
+          "amount": 680
+        },
+        {
+          "key": "FREIGHT_TRUNK",
+          "label": "南沙—防封内支线海运",
+          "step_ref": "VS_FEEDER_NS",
+          "amount": 1680
+        },
+        {
+          "key": "THC_HAIPHONG",
+          "label": "海防港卸船费",
+          "step_ref": "T_HAIPHONG",
+          "amount": 460
+        },
+        {
+          "key": "CUSTOMS_IMPORT",
+          "label": "越南进口清关",
+          "step_ref": "C_HAIPHONG",
+          "amount": 680
+        },
+        {
+          "key": "FREIGHT_TRUCK",
+          "label": "海防—河内卡车",
+          "step_ref": "VS_TRUCK_HP",
+          "amount": 1100
+        },
+        {
+          "key": "FEE_DELIVERY",
+          "label": "河内收货预约交付",
+          "step_ref": "APPOINTMENT",
+          "amount": 180
+        }
+      ]
+    },
+    {
+      "route": "RAIL_SEA",
+      "version": "v1",
+      "name": "海铁联运价",
+      "effective_from": "2026-05-01",
+      "effective_to": null,
+      "note": "运河到钦州后转跨境班列，规避海防港与海上甩箱",
+      "components": [
+        {
+          "key": "THC_WUZHOU",
+          "label": "梧州港码头作业费",
+          "step_ref": "T_WUZHOU",
+          "amount": 480
+        },
+        {
+          "key": "CUSTOMS_EXPORT",
+          "label": "出口报关与单证",
+          "step_ref": "C_WUZHOU",
+          "amount": 320
+        },
+        {
+          "key": "FREIGHT_DIRECT",
+          "label": "梧州—钦州江海直达运费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 1580
+        },
+        {
+          "key": "LOCK_MADONG",
+          "label": "马道船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "LOCK_QISHI",
+          "label": "企石船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "LOCK_QINGSHA",
+          "label": "青年船闸过闸费",
+          "step_ref": "VS_CANAL_DIRECT",
+          "amount": 150
+        },
+        {
+          "key": "THC_QINZHOU",
+          "label": "钦州港卸船作业费",
+          "step_ref": "T_QINZHOU",
+          "amount": 520
+        },
+        {
+          "key": "CUSTOMS_TRANSIT",
+          "label": "钦州出口转关",
+          "step_ref": "C_QINZHOU",
+          "amount": 120
+        },
+        {
+          "key": "FREIGHT_DRAYAGE",
+          "label": "钦州港—港东站短驳",
+          "step_ref": "VS_TRUCK_QZE",
+          "amount": 260
+        },
+        {
+          "key": "RAIL_LOAD",
+          "label": "港东站装车",
+          "step_ref": "T_QZ_EAST",
+          "amount": 300
+        },
+        {
+          "key": "FREIGHT_RAIL_DOM",
+          "label": "港东—凭祥班列(国内段)",
+          "step_ref": "VS_RAIL_COAST",
+          "amount": 1280
+        },
+        {
+          "key": "RAIL_GAUGE",
+          "label": "凭祥(友谊关)换装",
+          "step_ref": "T_PINGXIANG",
+          "amount": 420
+        },
+        {
+          "key": "CUSTOMS_BORDER",
+          "label": "友谊关跨境报关",
+          "step_ref": "C_BORDER",
+          "amount": 560
+        },
+        {
+          "key": "FREIGHT_RAIL_VN",
+          "label": "友谊关—河内班列(越段)",
+          "step_ref": "VS_RAIL_XBORDER",
+          "amount": 980
+        },
+        {
+          "key": "FEE_DELIVERY",
+          "label": "河内收货预约交付",
+          "step_ref": "APPOINTMENT",
+          "amount": 180
+        }
+      ]
+    }
+  ],
+  "surcharges": [
+    {
+      "key": "ROLL_FEE",
+      "label": "甩箱改配费",
+      "amount": 350,
+      "unit": "TEU",
+      "note": "船公司甩箱后改配下一班"
+    },
+    {
+      "key": "PORT_STORAGE",
+      "label": "港口堆存费",
+      "amount": 60,
+      "unit": "TEU_DAY",
+      "free_days": 4,
+      "note": "免堆4天后按天计"
+    },
+    {
+      "key": "CONTAINER_DETENTION",
+      "label": "集装箱超期使用费",
+      "amount": 120,
+      "unit": "TEU_DAY",
+      "free_days": 7,
+      "note": "免用箱7天后按天计"
+    },
+    {
+      "key": "CUSTOMS_REDECLARE",
+      "label": "退关重报费",
+      "amount": 260,
+      "unit": "TEU"
+    },
+    {
+      "key": "DOC_REISSUE",
+      "label": "单证重制费",
+      "amount": 150,
+      "unit": "TEU"
+    },
+    {
+      "key": "REROUTE_ADMIN",
+      "label": "改港/改线操作费",
+      "amount": 400,
+      "unit": "TEU"
+    },
+    {
+      "key": "APPOINTMENT_CHANGE",
+      "label": "河内收货改约费",
+      "amount": 90,
+      "unit": "TEU"
+    },
+    {
+      "key": "CUSTOMS_LATE_FILING",
+      "label": "报关逾期罚金",
+      "amount": 180,
+      "unit": "TEU"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "Q-2025-11",
+      "route": "OLD",
+      "card_version": "v3",
+      "customer": "六堡茶出口经理",
+      "teu": 6,
+      "issued_at": "2025-11-15",
+      "valid_until": "2025-12-15",
+      "note": "运河通航前旧线报价"
+    },
+    {
+      "id": "Q-2026-04",
+      "route": "CANAL",
+      "card_version": "v1",
+      "customer": "六堡茶出口经理",
+      "teu": 6,
+      "issued_at": "2026-04-10",
+      "valid_until": "2026-07-31",
+      "note": "通航促销报价，客户以此试单"
+    },
+    {
+      "id": "Q-2026-08",
+      "route": "CANAL",
+      "card_version": "v2",
+      "customer": "六堡茶出口经理",
+      "teu": 6,
+      "issued_at": "2026-08-20",
+      "valid_until": "2026-10-31",
+      "note": "本票合同锁定的标准价报价"
+    },
+    {
+      "id": "Q-AUTO-09",
+      "route": "CANAL",
+      "card_version": "v2",
+      "customer": "汽车散件出口部",
+      "teu": 24,
+      "issued_at": "2026-09-01",
+      "valid_until": "2026-11-30",
+      "note": "东盟组装线月度补货"
+    },
+    {
+      "id": "Q-RAIL-05",
+      "route": "RAIL_SEA",
+      "card_version": "v1",
+      "customer": "六堡茶出口经理",
+      "teu": 6,
+      "issued_at": "2026-09-10",
+      "valid_until": "2026-11-30",
+      "note": "备选：海铁联运报价"
+    }
+  ]
+}

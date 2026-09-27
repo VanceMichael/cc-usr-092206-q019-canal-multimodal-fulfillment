@@ -1,0 +1,904 @@
+{
+  "as_of": "2026-09-27",
+  "currency": "CNY",
+  "nodes": [
+    {
+      "id": "WUZHOU",
+      "name": "梧州港",
+      "type": "RIVER_PORT",
+      "party": "TERMINAL"
+    },
+    {
+      "id": "JIANGKOU",
+      "name": "平塘江口",
+      "type": "CANAL_ENTRANCE"
+    },
+    {
+      "id": "LK_MADONG",
+      "name": "马道枢纽船闸",
+      "type": "LOCK",
+      "party": "CANAL_AUTH"
+    },
+    {
+      "id": "LK_QISHI",
+      "name": "企石枢纽船闸",
+      "type": "LOCK",
+      "party": "CANAL_AUTH"
+    },
+    {
+      "id": "LK_QINGSHA",
+      "name": "青年枢纽船闸",
+      "type": "LOCK",
+      "party": "CANAL_AUTH"
+    },
+    {
+      "id": "QINZHOU",
+      "name": "钦州港",
+      "type": "SEA_PORT",
+      "party": "TERMINAL"
+    },
+    {
+      "id": "QZ_EAST",
+      "name": "钦州港东站",
+      "type": "RAIL_STATION",
+      "party": "RAIL"
+    },
+    {
+      "id": "PINGXIANG",
+      "name": "凭祥站",
+      "type": "BORDER_RAIL",
+      "party": "RAIL"
+    },
+    {
+      "id": "HUU_NGHI",
+      "name": "友谊关口岸",
+      "type": "BORDER_CROSSING",
+      "party": "CUSTOMS"
+    },
+    {
+      "id": "NANSHA",
+      "name": "广州南沙港",
+      "type": "SEA_PORT",
+      "party": "TERMINAL"
+    },
+    {
+      "id": "HAIPHONG",
+      "name": "海防港",
+      "type": "SEA_PORT",
+      "party": "TERMINAL"
+    },
+    {
+      "id": "HANOI",
+      "name": "河内",
+      "type": "DESTINATION",
+      "party": "CONSIGNEE"
+    }
+  ],
+  "legs": [
+    {
+      "id": "CANAL-1",
+      "route": "CANAL",
+      "seq": 1,
+      "from": "WUZHOU",
+      "to": "JIANGKOU",
+      "mode": "BARGE",
+      "distance_km": 220
+    },
+    {
+      "id": "CANAL-2",
+      "route": "CANAL",
+      "seq": 2,
+      "from": "JIANGKOU",
+      "to": "LK_MADONG",
+      "mode": "CANAL",
+      "distance_km": 18
+    },
+    {
+      "id": "CANAL-3",
+      "route": "CANAL",
+      "seq": 3,
+      "from": "LK_MADONG",
+      "to": "LK_QISHI",
+      "mode": "CANAL",
+      "distance_km": 26
+    },
+    {
+      "id": "CANAL-4",
+      "route": "CANAL",
+      "seq": 4,
+      "from": "LK_QISHI",
+      "to": "LK_QINGSHA",
+      "mode": "CANAL",
+      "distance_km": 34
+    },
+    {
+      "id": "CANAL-5",
+      "route": "CANAL",
+      "seq": 5,
+      "from": "LK_QINGSHA",
+      "to": "QINZHOU",
+      "mode": "CANAL",
+      "distance_km": 78
+    },
+    {
+      "id": "CANAL-6",
+      "route": "CANAL",
+      "seq": 6,
+      "from": "QINZHOU",
+      "to": "HAIPHONG",
+      "mode": "COASTER",
+      "distance_km": 250
+    },
+    {
+      "id": "CANAL-7",
+      "route": "CANAL",
+      "seq": 7,
+      "from": "HAIPHONG",
+      "to": "HANOI",
+      "mode": "TRUCK",
+      "distance_km": 124
+    },
+    {
+      "id": "OLD-1",
+      "route": "OLD",
+      "seq": 1,
+      "from": "WUZHOU",
+      "to": "NANSHA",
+      "mode": "BARGE",
+      "distance_km": 480
+    },
+    {
+      "id": "OLD-2",
+      "route": "OLD",
+      "seq": 2,
+      "from": "NANSHA",
+      "to": "HAIPHONG",
+      "mode": "COASTER",
+      "distance_km": 386
+    },
+    {
+      "id": "OLD-3",
+      "route": "OLD",
+      "seq": 3,
+      "from": "HAIPHONG",
+      "to": "HANOI",
+      "mode": "TRUCK",
+      "distance_km": 124
+    },
+    {
+      "id": "RAIL-1",
+      "route": "RAIL_SEA",
+      "seq": 1,
+      "from": "WUZHOU",
+      "to": "JIANGKOU",
+      "mode": "BARGE",
+      "distance_km": 220
+    },
+    {
+      "id": "RAIL-2",
+      "route": "RAIL_SEA",
+      "seq": 2,
+      "from": "JIANGKOU",
+      "to": "LK_MADONG",
+      "mode": "CANAL",
+      "distance_km": 18
+    },
+    {
+      "id": "RAIL-3",
+      "route": "RAIL_SEA",
+      "seq": 3,
+      "from": "LK_MADONG",
+      "to": "LK_QISHI",
+      "mode": "CANAL",
+      "distance_km": 26
+    },
+    {
+      "id": "RAIL-4",
+      "route": "RAIL_SEA",
+      "seq": 4,
+      "from": "LK_QISHI",
+      "to": "LK_QINGSHA",
+      "mode": "CANAL",
+      "distance_km": 34
+    },
+    {
+      "id": "RAIL-5",
+      "route": "RAIL_SEA",
+      "seq": 5,
+      "from": "LK_QINGSHA",
+      "to": "QINZHOU",
+      "mode": "CANAL",
+      "distance_km": 78
+    },
+    {
+      "id": "RAIL-6",
+      "route": "RAIL_SEA",
+      "seq": 6,
+      "from": "QINZHOU",
+      "to": "QZ_EAST",
+      "mode": "TRUCK",
+      "distance_km": 14
+    },
+    {
+      "id": "RAIL-7",
+      "route": "RAIL_SEA",
+      "seq": 7,
+      "from": "QZ_EAST",
+      "to": "PINGXIANG",
+      "mode": "RAIL",
+      "distance_km": 280
+    },
+    {
+      "id": "RAIL-8",
+      "route": "RAIL_SEA",
+      "seq": 8,
+      "from": "HUU_NGHI",
+      "to": "HANOI",
+      "mode": "RAIL",
+      "distance_km": 190
+    }
+  ],
+  "routes": [
+    {
+      "id": "CANAL",
+      "name": "平陆运河江海直达线",
+      "distance_km": 750,
+      "steps": [
+        {
+          "t": "TERMINAL",
+          "ref": "T_WUZHOU",
+          "node": "WUZHOU",
+          "role": "GATE_IN",
+          "party_from": "SHIPPER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_WUZHOU",
+          "node": "WUZHOU",
+          "role": "EXPORT",
+          "docs": [
+            "出口报关单",
+            "商业发票",
+            "装箱单",
+            "外贸合同",
+            "RCEP原产地证书",
+            "植物检疫证书"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_CANAL_DIRECT",
+          "node_from": "WUZHOU",
+          "node_to": "QINZHOU",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_WATER",
+          "checkpoints": [
+            {
+              "after_hours": 24,
+              "node": "JIANGKOU",
+              "leg": "CANAL-1"
+            },
+            {
+              "after_hours": 27,
+              "node": "LK_MADONG",
+              "leg": "CANAL-2",
+              "lock": "LK_MADONG"
+            },
+            {
+              "after_hours": 33,
+              "node": "LK_QISHI",
+              "leg": "CANAL-3",
+              "lock": "LK_QISHI"
+            },
+            {
+              "after_hours": 40,
+              "node": "LK_QINGSHA",
+              "leg": "CANAL-4",
+              "lock": "LK_QINGSHA"
+            },
+            {
+              "after_hours": 40,
+              "node": "QINZHOU",
+              "leg": "CANAL-5"
+            }
+          ]
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_QINZHOU",
+          "node": "QINZHOU",
+          "role": "TRANSSHIP",
+          "party_from": "CARRIER_WATER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_QINZHOU",
+          "node": "QINZHOU",
+          "role": "PORT_RELEASE",
+          "docs": [
+            "出口转关舱单"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_COASTER_QZ",
+          "node_from": "QINZHOU",
+          "node_to": "HAIPHONG",
+          "leg": "CANAL-6",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_WATER"
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_HAIPHONG",
+          "node": "HAIPHONG",
+          "role": "DISCHARGE",
+          "party_from": "CARRIER_WATER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_HAIPHONG",
+          "node": "HAIPHONG",
+          "role": "IMPORT",
+          "docs": [
+            "进口报关单",
+            "海运提单",
+            "RCEP原产地证书",
+            "植物检疫证书",
+            "提货单"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_TRUCK_HP",
+          "node_from": "HAIPHONG",
+          "node_to": "HANOI",
+          "leg": "CANAL-7",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_TRUCK"
+        },
+        {
+          "t": "APPOINTMENT",
+          "ref": "APPOINTMENT",
+          "node": "HANOI",
+          "role": "DELIVERY",
+          "party_from": "CARRIER_TRUCK",
+          "party_to": "CONSIGNEE"
+        }
+      ]
+    },
+    {
+      "id": "OLD",
+      "name": "西江—珠三角旧线",
+      "distance_km": 990,
+      "steps": [
+        {
+          "t": "TERMINAL",
+          "ref": "T_WUZHOU",
+          "node": "WUZHOU",
+          "role": "GATE_IN",
+          "party_from": "SHIPPER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_WUZHOU",
+          "node": "WUZHOU",
+          "role": "EXPORT",
+          "docs": [
+            "出口报关单",
+            "商业发票",
+            "装箱单",
+            "外贸合同",
+            "RCEP原产地证书",
+            "植物检疫证书"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_FEEDER_OLD",
+          "node_from": "WUZHOU",
+          "node_to": "NANSHA",
+          "leg": "OLD-1",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_WATER"
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_NANSHA",
+          "node": "NANSHA",
+          "role": "TRANSSHIP",
+          "party_from": "CARRIER_WATER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_FEEDER_NS",
+          "node_from": "NANSHA",
+          "node_to": "HAIPHONG",
+          "leg": "OLD-2",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_WATER"
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_HAIPHONG",
+          "node": "HAIPHONG",
+          "role": "DISCHARGE",
+          "party_from": "CARRIER_WATER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_HAIPHONG",
+          "node": "HAIPHONG",
+          "role": "IMPORT",
+          "docs": [
+            "进口报关单",
+            "海运提单",
+            "RCEP原产地证书",
+            "植物检疫证书",
+            "提货单"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_TRUCK_HP",
+          "node_from": "HAIPHONG",
+          "node_to": "HANOI",
+          "leg": "OLD-3",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_TRUCK"
+        },
+        {
+          "t": "APPOINTMENT",
+          "ref": "APPOINTMENT",
+          "node": "HANOI",
+          "role": "DELIVERY",
+          "party_from": "CARRIER_TRUCK",
+          "party_to": "CONSIGNEE"
+        }
+      ]
+    },
+    {
+      "id": "RAIL_SEA",
+      "name": "运河海铁联运（钦州—友谊关—河内）",
+      "distance_km": 860,
+      "steps": [
+        {
+          "t": "TERMINAL",
+          "ref": "T_WUZHOU",
+          "node": "WUZHOU",
+          "role": "GATE_IN",
+          "party_from": "SHIPPER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_WUZHOU",
+          "node": "WUZHOU",
+          "role": "EXPORT",
+          "docs": [
+            "出口报关单",
+            "商业发票",
+            "装箱单",
+            "外贸合同",
+            "RCEP原产地证书",
+            "植物检疫证书"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_CANAL_DIRECT",
+          "node_from": "WUZHOU",
+          "node_to": "QINZHOU",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_WATER",
+          "checkpoints": [
+            {
+              "after_hours": 24,
+              "node": "JIANGKOU",
+              "leg": "RAIL-1"
+            },
+            {
+              "after_hours": 27,
+              "node": "LK_MADONG",
+              "leg": "RAIL-2",
+              "lock": "LK_MADONG"
+            },
+            {
+              "after_hours": 33,
+              "node": "LK_QISHI",
+              "leg": "RAIL-3",
+              "lock": "LK_QISHI"
+            },
+            {
+              "after_hours": 40,
+              "node": "LK_QINGSHA",
+              "leg": "RAIL-4",
+              "lock": "LK_QINGSHA"
+            },
+            {
+              "after_hours": 40,
+              "node": "QINZHOU",
+              "leg": "RAIL-5"
+            }
+          ]
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_QINZHOU",
+          "node": "QINZHOU",
+          "role": "TRANSSHIP",
+          "party_from": "CARRIER_WATER",
+          "party_to": "TERMINAL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_QINZHOU",
+          "node": "QINZHOU",
+          "role": "PORT_RELEASE",
+          "docs": [
+            "出口转关舱单"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_TRUCK_QZE",
+          "node_from": "QINZHOU",
+          "node_to": "QZ_EAST",
+          "leg": "RAIL-6",
+          "party_from": "TERMINAL",
+          "party_to": "CARRIER_TRUCK"
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_QZ_EAST",
+          "node": "QZ_EAST",
+          "role": "RAIL_LOAD",
+          "party_from": "CARRIER_TRUCK",
+          "party_to": "RAIL"
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_RAIL_COAST",
+          "node_from": "QZ_EAST",
+          "node_to": "PINGXIANG",
+          "leg": "RAIL-7",
+          "party_from": "RAIL",
+          "party_to": "RAIL"
+        },
+        {
+          "t": "TERMINAL",
+          "ref": "T_PINGXIANG",
+          "node": "PINGXIANG",
+          "role": "GAUGE_TRANSSHIP",
+          "party_from": "RAIL",
+          "party_to": "RAIL"
+        },
+        {
+          "t": "CUSTOMS",
+          "ref": "C_BORDER",
+          "node": "HUU_NGHI",
+          "role": "BORDER",
+          "docs": [
+            "铁路舱单",
+            "联运提单",
+            "RCEP原产地证书",
+            "植物检疫证书",
+            "两国监管簿"
+          ]
+        },
+        {
+          "t": "VOYAGE",
+          "ref": "VS_RAIL_XBORDER",
+          "node_from": "HUU_NGHI",
+          "node_to": "HANOI",
+          "leg": "RAIL-8",
+          "party_from": "RAIL",
+          "party_to": "RAIL"
+        },
+        {
+          "t": "APPOINTMENT",
+          "ref": "APPOINTMENT",
+          "node": "HANOI",
+          "role": "DELIVERY",
+          "party_from": "RAIL",
+          "party_to": "CONSIGNEE"
+        }
+      ]
+    }
+  ],
+  "vessel_services": [
+    {
+      "id": "VS_CANAL_DIRECT",
+      "name": "梧州—钦州江海直达班轮",
+      "weekdays": [
+        0,
+        2,
+        5
+      ],
+      "time": "06:00",
+      "capacity_teu": 90,
+      "controllable": [
+        "LK_MADONG",
+        "LK_QISHI",
+        "LK_QINGSHA"
+      ]
+    },
+    {
+      "id": "VS_FEEDER_OLD",
+      "name": "梧州—南沙西江水系驳船",
+      "weekdays": [
+        3,
+        6
+      ],
+      "time": "09:00",
+      "transit_hours": 56,
+      "capacity_teu": 110
+    },
+    {
+      "id": "VS_FEEDER_NS",
+      "name": "南沙—海防周班内支线",
+      "weekdays": [
+        4
+      ],
+      "time": "02:00",
+      "transit_hours": 60,
+      "capacity_teu": 220,
+      "cutoff_hours_before": 32
+    },
+    {
+      "id": "VS_COASTER_QZ",
+      "name": "钦州—海防近海支线",
+      "weekdays": [
+        1,
+        5
+      ],
+      "time": "20:00",
+      "transit_hours": 26,
+      "capacity_teu": 120
+    },
+    {
+      "id": "VS_TRUCK_HP",
+      "name": "海防—河内公路班车",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "times": [
+        "08:00",
+        "20:00"
+      ],
+      "transit_hours": 8,
+      "capacity_teu": 24
+    },
+    {
+      "id": "VS_TRUCK_QZE",
+      "name": "钦州港—港东站短驳",
+      "weekdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "times": [
+        "10:00",
+        "16:00"
+      ],
+      "transit_hours": 2,
+      "capacity_teu": 30
+    },
+    {
+      "id": "VS_RAIL_COAST",
+      "name": "钦州港东—凭祥跨境班列(国内段)",
+      "weekdays": [
+        0,
+        3
+      ],
+      "time": "06:00",
+      "transit_hours": 9,
+      "capacity_teu": 70
+    },
+    {
+      "id": "VS_RAIL_XBORDER",
+      "name": "友谊关—河内安员站(越段)",
+      "weekdays": [
+        1,
+        4
+      ],
+      "time": "11:00",
+      "transit_hours": 14,
+      "capacity_teu": 60
+    }
+  ],
+  "locks": [
+    {
+      "id": "LK_MADONG",
+      "windows": [
+        "02:10",
+        "10:10",
+        "18:10"
+      ],
+      "capacity_teu": 80,
+      "passage_hours": 2,
+      "fee_key": "LK_MADONG"
+    },
+    {
+      "id": "LK_QISHI",
+      "windows": [
+        "02:10",
+        "10:10",
+        "18:10"
+      ],
+      "capacity_teu": 80,
+      "passage_hours": 2,
+      "fee_key": "LK_QISHI"
+    },
+    {
+      "id": "LK_QINGSHA",
+      "windows": [
+        "02:10",
+        "10:10",
+        "18:10"
+      ],
+      "capacity_teu": 80,
+      "passage_hours": 2,
+      "fee_key": "LK_QINGSHA"
+    }
+  ],
+  "terminals": [
+    {
+      "id": "T_WUZHOU",
+      "node": "WUZHOU",
+      "capacity_per_day": 150,
+      "dwell_hours": 4
+    },
+    {
+      "id": "T_QINZHOU",
+      "node": "QINZHOU",
+      "capacity_per_day": 160,
+      "dwell_hours": 8
+    },
+    {
+      "id": "T_NANSHA",
+      "node": "NANSHA",
+      "capacity_per_day": 200,
+      "dwell_hours": 24
+    },
+    {
+      "id": "T_HAIPHONG",
+      "node": "HAIPHONG",
+      "capacity_per_day": 100,
+      "dwell_hours": 12
+    },
+    {
+      "id": "T_QZ_EAST",
+      "node": "QZ_EAST",
+      "capacity_per_day": 90,
+      "dwell_hours": 6
+    },
+    {
+      "id": "T_PINGXIANG",
+      "node": "PINGXIANG",
+      "capacity_per_day": 90,
+      "dwell_hours": 8
+    }
+  ],
+  "customs": [
+    {
+      "id": "C_WUZHOU",
+      "node": "WUZHOU",
+      "cutoff": "12:00",
+      "same_day_release": "17:00",
+      "next_day_release": "10:00",
+      "capacity_per_day": 150,
+      "fee_key": "C_WUZHOU"
+    },
+    {
+      "id": "C_QINZHOU",
+      "node": "QINZHOU",
+      "cutoff": "15:00",
+      "same_day_release": "20:00",
+      "next_day_release": "09:00",
+      "capacity_per_day": 160,
+      "fee_key": "C_QINZHOU"
+    },
+    {
+      "id": "C_HAIPHONG",
+      "node": "HAIPHONG",
+      "cutoff": "11:00",
+      "same_day_release": "16:00",
+      "next_day_release": "11:00",
+      "capacity_per_day": 70,
+      "fee_key": "C_HAIPHONG"
+    },
+    {
+      "id": "C_BORDER",
+      "node": "HUU_NGHI",
+      "cutoff": "10:30",
+      "same_day_release": "15:00",
+      "next_day_release": "11:00",
+      "capacity_per_day": 80,
+      "fee_key": "C_BORDER"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "APP_TEA",
+      "node": "HANOI",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "open": "09:00",
+      "close": "17:00",
+      "capacity_per_day": 16,
+      "dwell_hours": 2
+    },
+    {
+      "id": "APP_AUTO",
+      "node": "HANOI",
+      "weekdays": [
+        0,
+        2,
+        4
+      ],
+      "open": "08:00",
+      "close": "16:00",
+      "capacity_per_day": 28,
+      "dwell_hours": 2
+    }
+  ],
+  "container_supply": [
+    {
+      "node": "WUZHOU",
+      "week": "2026-W40",
+      "capacity_teu": 60
+    },
+    {
+      "node": "WUZHOU",
+      "week": "2026-W41",
+      "capacity_teu": 40
+    },
+    {
+      "node": "WUZHOU",
+      "week": "2026-W42",
+      "capacity_teu": 40
+    },
+    {
+      "node": "QINZHOU",
+      "week": "2026-W41",
+      "capacity_teu": 30
+    },
+    {
+      "node": "QINZHOU",
+      "week": "2026-W42",
+      "capacity_teu": 30
+    }
+  ],
+  "parties": {
+    "SHIPPER": "出口货主",
+    "TERMINAL": "港口码头",
+    "CARRIER_WATER": "水运承运人",
+    "CARRIER_TRUCK": "公路承运人",
+    "RAIL": "海铁/跨境班列经营人",
+    "CANAL_AUTH": "运河船闸调度单位",
+    "CUSTOMS": "两国海关",
+    "CONSIGNEE": "越南收货方"
+  }
+}

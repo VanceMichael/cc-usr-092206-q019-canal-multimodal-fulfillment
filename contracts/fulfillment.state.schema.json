@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "运河多式联运履约状态导出契约",
+  "description": "FulfillmentService + Settlement 产出的履约快照：合同、分段版本化承诺、资源占用与结算。原承诺(v1)与后续版本同时保留，可追溯。",
+  "type": "object",
+  "required": ["as_of", "contracts", "resource_calendar", "settlement_tea"],
+  "properties": {
+    "as_of": {"type": "string", "minLength": 1},
+    "contracts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["contract", "shipments"],
+        "properties": {
+          "contract": {"type": "object"},
+          "shipments": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"$ref": "#/$defs/shipment"}
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "resource_calendar": {
+      "type": "object",
+      "required": ["active_holds", "buckets"],
+      "properties": {
+        "active_holds": {"type": "integer", "minimum": 0},
+        "buckets": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "settlement_tea": {"type": "object"}
+  },
+  "$defs": {
+    "shipment": {
+      "type": "object",
+      "required": ["id", "contract_id", "teu", "original_teu", "status",
+                   "versions", "exceptions"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "contract_id": {"type": "string", "minLength": 1},
+        "teu": {"type": "integer", "minimum": 1},
+        "original_teu": {"type": "integer", "minimum": 1},
+        "status": {"type": "string"},
+        "parent_id": {"type": ["string", "null"]},
+        "versions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/planVersion"}
+        },
+        "exceptions": {"type": "array", "items": {"$ref": "#/$defs/exception"}},
+        "delivered_at": {"type": ["string", "null"]}
+      }
+    },
+    "planVersion": {
+      "type": "object",
+      "required": ["version", "route", "route_name", "card_version",
+                   "created_at", "reason", "steps", "committed_eta",
+                   "committed_cost", "state"],
+      "properties": {
+        "version": {"type": "integer", "minimum": 1},
+        "route": {"type": "string"},
+        "route_name": {"type": "string"},
+        "card_version": {"type": "string"},
+        "card_name": {"type": "string"},
+        "reason": {"type": "string"},
+        "exception_id": {"type": ["string", "null"]},
+        "state": {"type": "string", "enum": ["ACTIVE", "SUPERSEDED"]},
+        "parent_version": {"type": ["integer", "null"]},
+        "committed_eta": {"type": "string"},
+        "committed_cost": {"type": "number", "minimum": 0},
+        "steps": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/step"}}
+      }
+    },
+    "step": {
+      "type": "object",
+      "required": ["seq", "type", "ref", "label", "node", "planned_start",
+                   "planned_end", "teu", "route", "status", "bookings",
+                   "consumed_bookings", "fees", "docs"],
+      "properties": {
+        "seq": {"type": "integer", "minimum": 1},
+        "type": {"type": "string", "enum": ["TERMINAL", "CUSTOMS", "VOYAGE", "APPOINTMENT"]},
+        "status": {"type": "string", "enum": ["PLANNED", "EXECUTED", "CANCELLED"]},
+        "teu": {"type": "integer", "minimum": 0},
+        "route": {"type": "string"},
+        "node": {"type": "string"},
+        "distance_km": {"type": "integer", "minimum": 0},
+        "planned_start": {"type": "string"},
+        "planned_end": {"type": "string"},
+        "actual_start": {"type": ["string", "null"]},
+        "actual_end": {"type": ["string", "null"]},
+        "bookings": {"type": "array", "items": {"type": "string"}},
+        "consumed_bookings": {"type": "array", "items": {"type": "string"}},
+        "fees": {"type": "array", "items": {"$ref": "#/$defs/feeLine"}},
+        "docs": {"type": "array", "items": {"type": "object"}},
+        "handoff": {"type": ["object", "null"]}
+      }
+    },
+    "feeLine": {
+      "type": "object",
+      "required": ["key", "label", "amount", "teu", "qty", "category"],
+      "properties": {
+        "key": {"type": "string"},
+        "label": {"type": "string"},
+        "amount": {"type": "number", "minimum": 0},
+        "teu": {"type": "integer", "minimum": 0},
+        "qty": {"type": "number", "minimum": 0},
+        "category": {"type": "string", "enum": ["BASE", "SURCHARGE"]},
+        "reason": {"type": "string"}
+      }
+    },
+    "exception": {
+      "type": "object",
+      "required": ["id", "shipment_id", "kind", "reason", "at",
+                   "from_version", "to_version", "impact_hours", "affected_teu"],
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {"type": "string", "enum": ["DELAY", "ROLL", "REROUTE", "WITHDRAW", "QUANTITY"]},
+        "reason": {"type": "string"},
+        "at": {"type": "string"},
+        "from_version": {"type": "integer"},
+        "to_version": {"type": "integer"},
+        "impact_hours": {"type": "number", "minimum": 0},
+        "affected_teu": {"type": "integer", "minimum": 0},
+        "surcharge_lines": {"type": "array", "items": {"$ref": "#/$defs/feeLine"}}
+      }
+    }
+  }
+}
