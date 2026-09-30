@@ -1,0 +1,210 @@
+{
+  "as_of": "2026-09-27T09:00:00",
+  "locations": [
+    {"code": "WZ", "name": "梧州六堡茶产地仓", "kind": "depot"},
+    {"code": "PTJ", "name": "平塘江口（西江·运河交汇）", "kind": "lock"},
+    {"code": "QZ", "name": "钦州港", "kind": "port"},
+    {"code": "GZB", "name": "广州黄埔港", "kind": "port"},
+    {"code": "NN", "name": "南宁南铁路中心站", "kind": "station"},
+    {"code": "FCG", "name": "防城港", "kind": "port"},
+    {"code": "CLP", "name": "越南盖邻港（下龙）", "kind": "port"},
+    {"code": "HPH", "name": "越南海防港", "kind": "port"},
+    {"code": "HAN", "name": "河内收货人仓库", "kind": "consignee"}
+  ],
+  "resources": {
+    "books": [
+      {"code": "SLOT-SEA-GZ-1002", "series": "SLOT-SEA-GZ", "kind": "slot_ship", "mode": "sea", "service": "广州-海防周班", "origin": "GZB", "dest": "HPH", "depart": "2026-10-02T12:00:00", "arrive": "2026-10-05T18:00:00", "capacity_teu": 14, "cutoff_hours": 24},
+      {"code": "SLOT-SEA-GZ-1009", "series": "SLOT-SEA-GZ", "kind": "slot_ship", "mode": "sea", "service": "广州-海防周班", "origin": "GZB", "dest": "HPH", "depart": "2026-10-09T12:00:00", "arrive": "2026-10-12T18:00:00", "capacity_teu": 14, "cutoff_hours": 24},
+
+      {"code": "SLOT-SEA-QH-0930", "series": "SLOT-SEA-QH", "kind": "slot_ship", "mode": "sea", "service": "钦州-海防快线", "origin": "QZ", "dest": "HPH", "depart": "2026-09-30T08:00:00", "arrive": "2026-10-01T20:00:00", "capacity_teu": 20, "cutoff_hours": 12},
+      {"code": "SLOT-SEA-QH-1006", "series": "SLOT-SEA-QH", "kind": "slot_ship", "mode": "sea", "service": "钦州-海防快线", "origin": "QZ", "dest": "HPH", "depart": "2026-10-06T08:00:00", "arrive": "2026-10-07T20:00:00", "capacity_teu": 12, "cutoff_hours": 12},
+      {"code": "SLOT-SEA-QH-1013", "series": "SLOT-SEA-QH", "kind": "slot_ship", "mode": "sea", "service": "钦州-海防快线", "origin": "QZ", "dest": "HPH", "depart": "2026-10-13T08:00:00", "arrive": "2026-10-14T20:00:00", "capacity_teu": 12, "cutoff_hours": 12},
+
+      {"code": "SLOT-SEA-CL-1005", "series": "SLOT-SEA-CL", "kind": "slot_ship", "mode": "sea", "service": "钦州-盖邻支线", "origin": "QZ", "dest": "CLP", "depart": "2026-10-05T06:00:00", "arrive": "2026-10-06T10:00:00", "capacity_teu": 8, "cutoff_hours": 12},
+
+      {"code": "SLOT-SEA-FC-1001", "series": "SLOT-SEA-FC", "kind": "slot_ship", "mode": "sea", "service": "防城-海防班轮", "origin": "FCG", "dest": "HPH", "depart": "2026-10-01T09:00:00", "arrive": "2026-10-02T15:00:00", "capacity_teu": 10, "cutoff_hours": 12},
+
+      {"code": "SLOT-RAIL-WN-0928", "series": "SLOT-RAIL-WN", "kind": "slot_rail", "mode": "rail", "service": "梧州-南宁班列", "origin": "WZ", "dest": "NN", "depart": "2026-09-28T20:00:00", "arrive": "2026-09-29T06:00:00", "capacity_teu": 6, "cutoff_hours": 4},
+      {"code": "SLOT-RAIL-WN-0930", "series": "SLOT-RAIL-WN", "kind": "slot_rail", "mode": "rail", "service": "梧州-南宁班列", "origin": "WZ", "dest": "NN", "depart": "2026-09-30T20:00:00", "arrive": "2026-10-01T06:00:00", "capacity_teu": 6, "cutoff_hours": 4},
+      {"code": "SLOT-RAIL-NF-0929", "series": "SLOT-RAIL-NF", "kind": "slot_rail", "mode": "rail", "service": "南防铁路班列", "origin": "NN", "dest": "FCG", "depart": "2026-09-29T22:00:00", "arrive": "2026-09-30T08:00:00", "capacity_teu": 6, "cutoff_hours": 4},
+      {"code": "SLOT-RAIL-NF-1001", "series": "SLOT-RAIL-NF", "kind": "slot_rail", "mode": "rail", "service": "南防铁路班列", "origin": "NN", "dest": "FCG", "depart": "2026-10-01T22:00:00", "arrive": "2026-10-02T08:00:00", "capacity_teu": 6, "cutoff_hours": 4}
+    ],
+    "windows": [
+      {"code": "LOCK-MD-0927", "series": "LOCK-MD", "kind": "lock", "name": "马道枢纽船闸", "opens": "2026-09-27T06:00:00", "closes": "2026-09-27T18:00:00", "capacity_per_window": 8, "offset_hours": 3},
+      {"code": "LOCK-QN-0927", "series": "LOCK-QN", "kind": "lock", "name": "青年枢纽船闸", "opens": "2026-09-27T06:00:00", "closes": "2026-09-27T18:00:00", "capacity_per_window": 8, "offset_hours": 7},
+      {"code": "LOCK-QS-0927", "series": "LOCK-QS", "kind": "lock", "name": "企石枢纽船闸", "opens": "2026-09-27T06:00:00", "closes": "2026-09-27T18:00:00", "capacity_per_window": 8, "offset_hours": 11},
+      {"code": "LOCK-MD-0928", "series": "LOCK-MD", "kind": "lock", "name": "马道枢纽船闸", "opens": "2026-09-28T06:00:00", "closes": "2026-09-28T18:00:00", "capacity_per_window": 8, "offset_hours": 3},
+      {"code": "LOCK-QN-0928", "series": "LOCK-QN", "kind": "lock", "name": "青年枢纽船闸", "opens": "2026-09-28T06:00:00", "closes": "2026-09-28T18:00:00", "capacity_per_window": 8, "offset_hours": 7},
+      {"code": "LOCK-QS-0928", "series": "LOCK-QS", "kind": "lock", "name": "企石枢纽船闸", "opens": "2026-09-28T06:00:00", "closes": "2026-09-28T18:00:00", "capacity_per_window": 8, "offset_hours": 11},
+      {"code": "LOCK-MD-0930", "series": "LOCK-MD", "kind": "lock", "name": "马道枢纽船闸", "opens": "2026-09-30T06:00:00", "closes": "2026-09-30T18:00:00", "capacity_per_window": 8, "offset_hours": 3},
+      {"code": "LOCK-QN-0930", "series": "LOCK-QN", "kind": "lock", "name": "青年枢纽船闸", "opens": "2026-09-30T06:00:00", "closes": "2026-09-30T18:00:00", "capacity_per_window": 8, "offset_hours": 7},
+      {"code": "LOCK-QS-0930", "series": "LOCK-QS", "kind": "lock", "name": "企石枢纽船闸", "opens": "2026-09-30T06:00:00", "closes": "2026-09-30T18:00:00", "capacity_per_window": 8, "offset_hours": 11},
+      {"code": "LOCK-MD-1001", "series": "LOCK-MD", "kind": "lock", "name": "马道枢纽船闸", "opens": "2026-10-01T06:00:00", "closes": "2026-10-01T18:00:00", "capacity_per_window": 8, "offset_hours": 3},
+      {"code": "LOCK-QN-1001", "series": "LOCK-QN", "kind": "lock", "name": "青年枢纽船闸", "opens": "2026-10-01T06:00:00", "closes": "2026-10-01T18:00:00", "capacity_per_window": 8, "offset_hours": 7},
+      {"code": "LOCK-QS-1001", "series": "LOCK-QS", "kind": "lock", "name": "企石枢纽船闸", "opens": "2026-10-01T06:00:00", "closes": "2026-10-01T18:00:00", "capacity_per_window": 8, "offset_hours": 11},
+
+      {"code": "QZ-BERTH-0929", "series": "QZ-BERTH", "kind": "port", "name": "钦州港泊位作业窗", "opens": "2026-09-29T06:00:00", "closes": "2026-09-29T22:00:00", "capacity_per_window": 10},
+      {"code": "QZ-BERTH-1001", "series": "QZ-BERTH", "kind": "port", "name": "钦州港泊位作业窗", "opens": "2026-10-01T06:00:00", "closes": "2026-10-01T22:00:00", "capacity_per_window": 10},
+      {"code": "QZ-BERTH-1002", "series": "QZ-BERTH", "kind": "port", "name": "钦州港泊位作业窗", "opens": "2026-10-02T06:00:00", "closes": "2026-10-02T22:00:00", "capacity_per_window": 10},
+      {"code": "QZ-CUS-0929", "series": "QZ-CUS", "kind": "customs", "name": "钦州报关窗（含夜班预约）", "opens": "2026-09-29T09:00:00", "closes": "2026-09-29T22:00:00", "capacity_per_window": 8},
+      {"code": "QZ-CUS-1001", "series": "QZ-CUS", "kind": "customs", "name": "钦州报关窗", "opens": "2026-10-01T09:00:00", "closes": "2026-10-01T17:00:00", "capacity_per_window": 8},
+      {"code": "QZ-CUS-1002", "series": "QZ-CUS", "kind": "customs", "name": "钦州报关窗", "opens": "2026-10-02T09:00:00", "closes": "2026-10-02T17:00:00", "capacity_per_window": 8},
+      {"code": "QZ-CUS-1004", "series": "QZ-CUS", "kind": "customs", "name": "钦州报关窗（改配重报）", "opens": "2026-10-04T09:00:00", "closes": "2026-10-04T17:00:00", "capacity_per_window": 8},
+
+      {"code": "GZB-BERTH-0928", "series": "GZB-BERTH", "kind": "port", "name": "黄埔港泊位作业窗", "opens": "2026-09-28T06:00:00", "closes": "2026-09-28T22:00:00", "capacity_per_window": 12},
+      {"code": "GZB-BERTH-1001", "series": "GZB-BERTH", "kind": "port", "name": "黄埔港泊位作业窗", "opens": "2026-10-01T06:00:00", "closes": "2026-10-01T22:00:00", "capacity_per_window": 12},
+      {"code": "GZB-CUS-0928", "series": "GZB-CUS", "kind": "customs", "name": "黄埔报关窗", "opens": "2026-09-28T09:00:00", "closes": "2026-09-28T17:00:00", "capacity_per_window": 8},
+      {"code": "GZB-CUS-1001", "series": "GZB-CUS", "kind": "customs", "name": "黄埔报关窗", "opens": "2026-10-01T09:00:00", "closes": "2026-10-01T17:00:00", "capacity_per_window": 8},
+
+      {"code": "NN-STATION-0929", "series": "NN-STATION", "kind": "rail", "name": "南宁南场站换装窗", "opens": "2026-09-29T06:30:00", "closes": "2026-09-29T20:00:00", "capacity_per_window": 6},
+      {"code": "NN-STATION-1001", "series": "NN-STATION", "kind": "rail", "name": "南宁南场站换装窗", "opens": "2026-10-01T06:30:00", "closes": "2026-10-01T20:00:00", "capacity_per_window": 6},
+      {"code": "FCG-BERTH-0930", "series": "FCG-BERTH", "kind": "port", "name": "防城港泊位作业窗", "opens": "2026-09-30T08:00:00", "closes": "2026-09-30T20:00:00", "capacity_per_window": 8},
+      {"code": "FCG-BERTH-1002", "series": "FCG-BERTH", "kind": "port", "name": "防城港泊位作业窗", "opens": "2026-10-02T08:00:00", "closes": "2026-10-02T20:00:00", "capacity_per_window": 8},
+      {"code": "FCG-CUS-0930", "series": "FCG-CUS", "kind": "customs", "name": "防城报关窗", "opens": "2026-09-30T10:00:00", "closes": "2026-09-30T17:00:00", "capacity_per_window": 8},
+      {"code": "FCG-CUS-1002", "series": "FCG-CUS", "kind": "customs", "name": "防城报关窗", "opens": "2026-10-02T10:00:00", "closes": "2026-10-02T17:00:00", "capacity_per_window": 8},
+
+      {"code": "HPH-BERTH-1002", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-02T06:00:00", "closes": "2026-10-02T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-BERTH-1003", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-03T06:00:00", "closes": "2026-10-03T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-BERTH-1006", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-06T06:00:00", "closes": "2026-10-06T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-BERTH-1008", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-08T06:00:00", "closes": "2026-10-08T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-BERTH-1013", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-13T06:00:00", "closes": "2026-10-13T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-BERTH-1015", "series": "HPH-BERTH", "kind": "port", "name": "海防港泊位作业窗", "opens": "2026-10-15T06:00:00", "closes": "2026-10-15T22:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1002", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-02T08:00:00", "closes": "2026-10-02T17:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1003", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-03T08:00:00", "closes": "2026-10-03T17:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1006", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-06T08:00:00", "closes": "2026-10-06T17:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1008", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-08T08:00:00", "closes": "2026-10-08T17:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1013", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-13T08:00:00", "closes": "2026-10-13T17:00:00", "capacity_per_window": 12},
+      {"code": "HPH-CUS-1015", "series": "HPH-CUS", "kind": "customs", "name": "海防清关窗", "opens": "2026-10-15T08:00:00", "closes": "2026-10-15T17:00:00", "capacity_per_window": 12},
+
+      {"code": "CLP-BERTH-1006", "series": "CLP-BERTH", "kind": "port", "name": "盖邻港泊位作业窗", "opens": "2026-10-06T10:00:00", "closes": "2026-10-06T22:00:00", "capacity_per_window": 8},
+      {"code": "CLP-CUS-1006", "series": "CLP-CUS", "kind": "customs", "name": "盖邻清关窗", "opens": "2026-10-06T13:00:00", "closes": "2026-10-06T19:00:00", "capacity_per_window": 8},
+
+      {"code": "APPT-HAN-1003", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-03T08:00:00", "closes": "2026-10-03T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1004", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-04T08:00:00", "closes": "2026-10-04T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1007", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-07T08:00:00", "closes": "2026-10-07T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1008", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-08T08:00:00", "closes": "2026-10-08T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1009", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-09T08:00:00", "closes": "2026-10-09T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1014", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-14T08:00:00", "closes": "2026-10-14T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1015", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-15T08:00:00", "closes": "2026-10-15T18:00:00", "capacity_per_window": 10},
+      {"code": "APPT-HAN-1016", "series": "APPT-HAN", "kind": "appointment", "name": "河内收货预约", "opens": "2026-10-16T08:00:00", "closes": "2026-10-16T18:00:00", "capacity_per_window": 10}
+    ],
+    "background": [
+      {"resource": "SLOT-SEA-QH-0930", "teu": 15.0},
+      {"resource": "SLOT-SEA-QH-1006", "teu": 9.0},
+      {"resource": "LOCK-QN-0928", "teu": 3.0},
+      {"resource": "QZ-BERTH-0929", "teu": 3.0},
+      {"resource": "SLOT-SEA-GZ-1002", "teu": 6.0},
+      {"resource": "SLOT-RAIL-WN-0928", "teu": 3.0},
+      {"resource": "SLOT-RAIL-NF-0929", "teu": 3.0},
+      {"resource": "SLOT-SEA-FC-1001", "teu": 4.0},
+      {"resource": "HPH-CUS-1002", "teu": 7.0}
+    ]
+  },
+  "routes": [
+    {
+      "code": "R-OLD",
+      "name": "传统西江-广州出海线",
+      "distance_km": 990,
+      "quote_ids": ["Q-OLD-2026-06", "Q-OLD-2026-09"],
+      "legs": [
+        {"seq": 1, "key": "truck_gz", "mode": "truck", "origin": "WZ", "dest": "GZB", "distance_km": 320, "line_name": "梧州-黄埔集卡", "duration_hours": 8, "resource_kind": "none", "resource_code": null, "cost_per_teu": 1900, "note": "绕行珠三角的长距离陆运"},
+        {"seq": 2, "key": "port_gzb", "mode": "port", "origin": "GZB", "dest": "GZB", "distance_km": 0, "line_name": "黄埔港装船作业", "duration_hours": 8, "resource_kind": "port", "resource_code": "GZB-BERTH", "cost_per_teu": 600},
+        {"seq": 3, "key": "cus_gzb", "mode": "customs", "origin": "GZB", "dest": "GZB", "distance_km": 0, "line_name": "黄埔出口报关", "duration_hours": 2, "resource_kind": "customs", "resource_code": "GZB-CUS", "cost_per_teu": 300},
+        {"seq": 4, "key": "sea_gz", "mode": "sea", "origin": "GZB", "dest": "HPH", "distance_km": 670, "line_name": "广州-海防周班", "duration_hours": 78, "resource_kind": "slot_ship", "resource_code": "SLOT-SEA-GZ", "cost_per_teu": 3650},
+        {"seq": 5, "key": "berth_hph", "mode": "port", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防港靠泊卸船", "duration_hours": 6, "resource_kind": "port", "resource_code": "HPH-BERTH", "cost_per_teu": 550},
+        {"seq": 6, "key": "cus_in_hph", "mode": "customs", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防进口清关", "duration_hours": 3, "resource_kind": "customs", "resource_code": "HPH-CUS", "cost_per_teu": 800},
+        {"seq": 7, "key": "tail_hph", "mode": "truck", "origin": "HPH", "dest": "HAN", "distance_km": 110, "line_name": "海防-河内尾程", "duration_hours": 6, "resource_kind": "appointment", "resource_code": "APPT-HAN", "cost_per_teu": 1500, "note": "尾程不计入990/750航程对比口径"}
+      ]
+    },
+    {
+      "code": "R-CANAL",
+      "name": "平陆运河江海联运线",
+      "distance_km": 750,
+      "quote_ids": ["Q-CANAL-2025-11", "Q-CANAL-2026-08", "Q-CANAL-2026-09"],
+      "legs": [
+        {"seq": 1, "key": "river_xj", "mode": "canal", "origin": "WZ", "dest": "PTJ", "distance_km": 210, "line_name": "西江上行至平塘江口", "duration_hours": 16, "resource_kind": "none", "resource_code": null, "cost_per_teu": 1200},
+        {"seq": 2, "key": "canal_main", "mode": "canal", "origin": "PTJ", "dest": "QZ", "distance_km": 140, "line_name": "平陆运河（马道-青年-企石三级船闸）", "duration_hours": 16, "resource_kind": "lock", "resource_code": "LOCK-MD", "extra_resources": ["LOCK-QN", "LOCK-QS"], "cost_per_teu": 1500},
+        {"seq": 3, "key": "port_qz", "mode": "port", "origin": "QZ", "dest": "QZ", "distance_km": 0, "line_name": "钦州港江海换装", "duration_hours": 8, "resource_kind": "port", "resource_code": "QZ-BERTH", "cost_per_teu": 650},
+        {"seq": 4, "key": "cus_qz", "mode": "customs", "origin": "QZ", "dest": "QZ", "distance_km": 0, "line_name": "钦州出口报关", "duration_hours": 2, "resource_kind": "customs", "resource_code": "QZ-CUS", "cost_per_teu": 300},
+        {"seq": 5, "key": "sea_qh", "mode": "sea", "origin": "QZ", "dest": "HPH", "distance_km": 400, "line_name": "钦州-海防快线", "duration_hours": 36, "resource_kind": "slot_ship", "resource_code": "SLOT-SEA-QH", "cost_per_teu": 2250},
+        {"seq": 6, "key": "berth_hph", "mode": "port", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防港靠泊卸船", "duration_hours": 6, "resource_kind": "port", "resource_code": "HPH-BERTH", "cost_per_teu": 550},
+        {"seq": 7, "key": "cus_in_hph", "mode": "customs", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防进口清关", "duration_hours": 3, "resource_kind": "customs", "resource_code": "HPH-CUS", "cost_per_teu": 800},
+        {"seq": 8, "key": "tail_hph", "mode": "truck", "origin": "HPH", "dest": "HAN", "distance_km": 110, "line_name": "海防-河内尾程", "duration_hours": 6, "resource_kind": "appointment", "resource_code": "APPT-HAN", "cost_per_teu": 1500}
+      ]
+    },
+    {
+      "code": "R-RAIL",
+      "name": "海铁联运备份线（梧州-南宁-防城）",
+      "distance_km": 780,
+      "quote_ids": ["Q-RAIL-2026-09"],
+      "legs": [
+        {"seq": 1, "key": "rail_wn", "mode": "rail", "origin": "WZ", "dest": "NN", "distance_km": 320, "line_name": "梧州-南宁跨境班列", "duration_hours": 10, "resource_kind": "slot_rail", "resource_code": "SLOT-RAIL-WN", "cost_per_teu": 2600},
+        {"seq": 2, "key": "station_nn", "mode": "rail", "origin": "NN", "dest": "NN", "distance_km": 0, "line_name": "南宁南场站换装", "duration_hours": 2, "resource_kind": "rail", "resource_code": "NN-STATION", "cost_per_teu": 400},
+        {"seq": 3, "key": "rail_nf", "mode": "rail", "origin": "NN", "dest": "FCG", "distance_km": 180, "line_name": "南防铁路", "duration_hours": 10, "resource_kind": "slot_rail", "resource_code": "SLOT-RAIL-NF", "cost_per_teu": 1500},
+        {"seq": 4, "key": "port_fc", "mode": "port", "origin": "FCG", "dest": "FCG", "distance_km": 0, "line_name": "防城港铁海换装", "duration_hours": 6, "resource_kind": "port", "resource_code": "FCG-BERTH", "cost_per_teu": 600},
+        {"seq": 5, "key": "cus_fc", "mode": "customs", "origin": "FCG", "dest": "FCG", "distance_km": 0, "line_name": "防城出口报关", "duration_hours": 2, "resource_kind": "customs", "resource_code": "FCG-CUS", "cost_per_teu": 300},
+        {"seq": 6, "key": "sea_fc", "mode": "sea", "origin": "FCG", "dest": "HPH", "distance_km": 280, "line_name": "防城-海防班轮", "duration_hours": 30, "resource_kind": "slot_ship", "resource_code": "SLOT-SEA-FC", "cost_per_teu": 2050},
+        {"seq": 7, "key": "berth_hph", "mode": "port", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防港靠泊卸船", "duration_hours": 6, "resource_kind": "port", "resource_code": "HPH-BERTH", "cost_per_teu": 550},
+        {"seq": 8, "key": "cus_in_hph", "mode": "customs", "origin": "HPH", "dest": "HPH", "distance_km": 0, "line_name": "海防进口清关", "duration_hours": 3, "resource_kind": "customs", "resource_code": "HPH-CUS", "cost_per_teu": 800},
+        {"seq": 9, "key": "tail_hph", "mode": "truck", "origin": "HPH", "dest": "HAN", "distance_km": 110, "line_name": "海防-河内尾程", "duration_hours": 6, "resource_kind": "appointment", "resource_code": "APPT-HAN", "cost_per_teu": 1500}
+      ]
+    },
+    {
+      "code": "R-CAILAN",
+      "name": "改港盖邻线（海防封港替代）",
+      "distance_km": 680,
+      "quote_ids": ["Q-CAILAN-2026-10"],
+      "legs": [
+        {"seq": 1, "key": "river_xj", "mode": "canal", "origin": "WZ", "dest": "PTJ", "distance_km": 210, "line_name": "西江上行至平塘江口", "duration_hours": 16, "resource_kind": "none", "resource_code": null, "cost_per_teu": 1200},
+        {"seq": 2, "key": "canal_main", "mode": "canal", "origin": "PTJ", "dest": "QZ", "distance_km": 140, "line_name": "平陆运河三级船闸", "duration_hours": 16, "resource_kind": "lock", "resource_code": "LOCK-MD", "extra_resources": ["LOCK-QN", "LOCK-QS"], "cost_per_teu": 1500},
+        {"seq": 3, "key": "port_qz", "mode": "port", "origin": "QZ", "dest": "QZ", "distance_km": 0, "line_name": "钦州港江海换装", "duration_hours": 8, "resource_kind": "port", "resource_code": "QZ-BERTH", "cost_per_teu": 650},
+        {"seq": 4, "key": "cus_qz", "mode": "customs", "origin": "QZ", "dest": "QZ", "distance_km": 0, "line_name": "钦州退关重报（改船改港）", "duration_hours": 2, "resource_kind": "customs", "resource_code": "QZ-CUS", "cost_per_teu": 300, "note": "对已放行出口货物改配的退关重报"},
+        {"seq": 5, "key": "sea_cl", "mode": "sea", "origin": "QZ", "dest": "CLP", "distance_km": 330, "line_name": "钦州-盖邻支线", "duration_hours": 28, "resource_kind": "slot_ship", "resource_code": "SLOT-SEA-CL", "cost_per_teu": 2850},
+        {"seq": 6, "key": "berth_clp", "mode": "port", "origin": "CLP", "dest": "CLP", "distance_km": 0, "line_name": "盖邻港靠泊卸船", "duration_hours": 6, "resource_kind": "port", "resource_code": "CLP-BERTH", "cost_per_teu": 550},
+        {"seq": 7, "key": "cus_in_clp", "mode": "customs", "origin": "CLP", "dest": "CLP", "distance_km": 0, "line_name": "盖邻进口清关", "duration_hours": 1, "resource_kind": "customs", "resource_code": "CLP-CUS", "cost_per_teu": 900},
+        {"seq": 8, "key": "tail_clp", "mode": "truck", "origin": "CLP", "dest": "HAN", "distance_km": 170, "line_name": "盖邻-河内尾程", "duration_hours": 8, "resource_kind": "appointment", "resource_code": "APPT-HAN", "cost_per_teu": 2200}
+      ]
+    }
+  ],
+  "quotes": [
+    {"quote_id": "Q-OLD-2026-06", "route_code": "R-OLD", "valid_from": "2026-06-01", "per_teu_total": 9550,
+     "per_leg": {"truck_gz": 1900, "port_gzb": 600, "cus_gzb": 300, "sea_gz": 3900, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "通航前旧线春季价"},
+    {"quote_id": "Q-OLD-2026-09", "route_code": "R-OLD", "valid_from": "2026-09-01", "per_teu_total": 9300,
+     "per_leg": {"truck_gz": 1900, "port_gzb": 600, "cus_gzb": 300, "sea_gz": 3650, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "旧线当期价（航线见报价明细）"},
+
+    {"quote_id": "Q-CANAL-2025-11", "route_code": "R-CANAL", "valid_from": "2025-11-01", "per_teu_total": 9700,
+     "per_leg": {"river_xj": 1350, "canal_main": 1800, "port_qz": 650, "cus_qz": 300, "sea_qh": 2750, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "通航前预估报价"},
+    {"quote_id": "Q-CANAL-2026-08", "route_code": "R-CANAL", "valid_from": "2026-08-01", "per_teu_total": 9050,
+     "per_leg": {"river_xj": 1200, "canal_main": 1500, "port_qz": 650, "cus_qz": 300, "sea_qh": 2550, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "通航首月班轮密度不足价"},
+    {"quote_id": "Q-CANAL-2026-09", "route_code": "R-CANAL", "valid_from": "2026-09-01", "per_teu_total": 8750,
+     "per_leg": {"river_xj": 1200, "canal_main": 1500, "port_qz": 650, "cus_qz": 300, "sea_qh": 2250, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "快线周班加密+大客户协议价（合同选用）"},
+
+    {"quote_id": "Q-RAIL-2026-09", "route_code": "R-RAIL", "valid_from": "2026-09-01", "per_teu_total": 10300,
+     "per_leg": {"rail_wn": 2600, "station_nn": 400, "rail_nf": 1500, "port_fc": 600, "cus_fc": 300, "sea_fc": 2050, "berth_hph": 550, "cus_in_hph": 800, "tail_hph": 1500},
+     "note": "海铁联运当期价"},
+    {"quote_id": "Q-CAILAN-2026-10", "route_code": "R-CAILAN", "valid_from": "2026-10-01", "per_teu_total": 10150,
+     "per_leg": {"river_xj": 1200, "canal_main": 1500, "port_qz": 650, "cus_qz": 300, "sea_cl": 2850, "berth_clp": 550, "cus_in_clp": 900, "tail_clp": 2200},
+     "note": "改港盖邻应急价（尾程更长）"}
+  ],
+  "contracts": [
+    {
+      "contract_no": "CT-LBTEA-2026-0926",
+      "shipper": "梧州六堡茶出口公司",
+      "consignee": "河内明宇茶饮连锁",
+      "cargo": "六堡茶（20GP/40HQ 混装整柜）",
+      "incoterm": "DAP",
+      "total_teu": 5.0,
+      "route_code": "R-CANAL",
+      "quote_id": "Q-CANAL-2026-09",
+      "latest_ship_date": "2026-09-30T20:00:00",
+      "receive_window_start": "2026-10-01T08:00:00",
+      "receive_window_end": "2026-10-06T18:00:00",
+      "unit_price": 260000
+    }
+  ]
+}

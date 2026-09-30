@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "平陆运河多式联运履约网络资料",
+  "type": "object",
+  "required": ["as_of", "locations", "resources", "routes", "quotes", "contracts"],
+  "properties": {
+    "as_of": {"type": "string"},
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "kind"],
+        "properties": {
+          "code": {"type": "string"},
+          "name": {"type": "string"},
+          "kind": {"type": "string", "enum": ["depot", "port", "lock", "station", "border", "icd", "consignee"]}
+        }
+      }
+    },
+    "resources": {
+      "type": "object",
+      "required": ["books", "windows"],
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["code", "series", "kind", "mode", "service", "origin", "dest", "depart", "arrive", "capacity_teu"],
+            "properties": {
+              "code": {"type": "string"},
+              "series": {"type": "string"},
+              "kind": {"type": "string", "enum": ["slot_ship", "slot_rail"]},
+              "mode": {"type": "string", "enum": ["sea", "rail"]},
+              "service": {"type": "string"},
+              "origin": {"type": "string"},
+              "dest": {"type": "string"},
+              "depart": {"type": "string"},
+              "arrive": {"type": "string"},
+              "capacity_teu": {"type": "number", "exclusiveMinimum": 0},
+              "cutoff_hours": {"type": "number", "minimum": 0}
+            }
+          }
+        },
+        "windows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["code", "series", "kind", "name", "opens", "closes", "capacity_per_window"],
+            "properties": {
+              "code": {"type": "string"},
+              "series": {"type": "string"},
+              "kind": {"type": "string", "enum": ["lock", "port", "customs", "rail", "border", "appointment"]},
+              "name": {"type": "string"},
+              "opens": {"type": "string"},
+              "closes": {"type": "string"},
+              "capacity_per_window": {"type": "number", "exclusiveMinimum": 0},
+              "offset_hours": {"type": "number"}
+            }
+          }
+        },
+        "background": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["resource", "teu"],
+            "properties": {"resource": {"type": "string"}, "teu": {"type": "number", "minimum": 0}}
+          }
+        }
+      }
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["code", "name", "distance_km", "quote_ids", "legs"],
+        "properties": {
+          "code": {"type": "string"},
+          "name": {"type": "string"},
+          "distance_km": {"type": "integer", "minimum": 0},
+          "quote_ids": {"type": "array", "items": {"type": "string"}},
+          "legs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["seq", "key", "mode", "origin", "dest", "distance_km", "line_name", "duration_hours", "resource_kind", "cost_per_teu"],
+              "properties": {
+                "seq": {"type": "integer", "minimum": 1},
+                "key": {"type": "string"},
+                "mode": {"type": "string", "enum": ["truck", "canal", "rail", "sea", "customs", "port", "border"]},
+                "origin": {"type": "string"},
+                "dest": {"type": "string"},
+                "distance_km": {"type": "integer", "minimum": 0},
+                "line_name": {"type": "string"},
+                "duration_hours": {"type": "number", "exclusiveMinimum": 0},
+                "resource_kind": {"type": "string", "enum": ["none", "lock", "slot_ship", "slot_rail", "port", "customs", "rail", "border", "appointment"]},
+                "resource_code": {"type": ["string", "null"]},
+                "extra_resources": {"type": "array", "items": {"type": "string"}},
+                "cost_per_teu": {"type": "number", "minimum": 0},
+                "note": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "quotes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["quote_id", "route_code", "valid_from", "per_teu_total", "per_leg"],
+        "properties": {
+          "quote_id": {"type": "string"},
+          "route_code": {"type": "string"},
+          "valid_from": {"type": "string"},
+          "per_teu_total": {"type": "number", "minimum": 0},
+          "per_leg": {"type": "object", "additionalProperties": {"type": "number"}},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["contract_no", "shipper", "consignee", "cargo", "incoterm", "total_teu", "route_code", "quote_id", "latest_ship_date", "receive_window_start", "receive_window_end"],
+        "properties": {
+          "contract_no": {"type": "string"},
+          "shipper": {"type": "string"},
+          "consignee": {"type": "string"},
+          "cargo": {"type": "string"},
+          "incoterm": {"type": "string"},
+          "total_teu": {"type": "number", "exclusiveMinimum": 0},
+          "route_code": {"type": "string"},
+          "quote_id": {"type": "string"},
+          "latest_ship_date": {"type": "string"},
+          "receive_window_start": {"type": "string"},
+          "receive_window_end": {"type": "string"},
+          "unit_price": {"type": "number"}
+        }
+      }
+    }
+  }
+}
